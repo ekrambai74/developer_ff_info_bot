@@ -73,18 +73,30 @@ CLIENT_VERSION = "1.132.1"
 ACCOUNT_CREDENTIALS = {
     "BD":  {"uid": "7980023325",
             "password": "FAD043657BDA30FB6CA9D581C18D09A4A7EBCB818577DB424CD528B0C9DF632A"},
-    "IND": {"uid": "7999845436",
-            "password": "N8KQUW5CQ488PC6HDZLC8U9ZGL0RLV7QYJLQBQITVZ1PC0CIAMGMQ7AQEY1O1Y"},
+    "IND": {"uid": "8173949953",
+            "password": "750B86626D958ECFA0581E3C31029D0A663019D4515AC66BC832A966E6789E01"},
     "BR":  {"uid": "7999847020",
             "password": "07AU4AV438F6PL8WTC19NKMYUFWROPOGYZOY1PU3PEZ4GKM73Q2SOXBY7D4NMG"},
+    "ID":  {"uid": "8174078191",
+            "password": "61ED56FA7F44029F707395480966A421264268BB72A437CD066445B326629AA8"},
+    "ME":  {"uid": "8174097439",
+            "password": "481930497498203F46ED7E5598716D8A34D18A872AA279237A426AB61B9D4CC5"},
+    "PK":  {"uid": "8174037948",
+            "password": "CAE1AECCCDB5E2A300537D1576F6695152D9ADB4F81B90FD9B721F56ED71065F"},
+    "SG":  {"uid": "8174060323",
+            "password": "9B502C3E9C7F7AEB6100008EA65E576D85A95C9A32102D7DEC6219459A526DD2"},
 }
 
 REGION_CONFIG = {
     "BD":  {"server_url": "https://clientbp.ppmainecoonghj.com",   "release_version": "OB55"},
     "IND": {"server_url": "https://client.ind.freefiremobile.com", "release_version": "OB55"},
     "BR":  {"server_url": "https://client.us.freefiremobile.com",  "release_version": "OB55"},
+    "ID":  {"server_url": "https://client.id.freefiremobile.com",  "release_version": "OB55"},
+    "ME":  {"server_url": "https://client.me.freefiremobile.com",  "release_version": "OB55"},
+    "PK":  {"server_url": "https://clientbp.ppmainecoonghj.com",   "release_version": "OB55"},
+    "SG":  {"server_url": "https://client.sg.freefiremobile.com",  "release_version": "OB55"},
 }
-REGION_PRIORITY = ["BD", "IND", "BR"]
+REGION_PRIORITY = ["BD", "IND", "BR", "ID", "ME", "PK", "SG"]
 
 # in-memory token cache (per serverless warm container)
 _token_cache = {}
