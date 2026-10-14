@@ -706,11 +706,12 @@ def route_access_jwt():
 def home():
     return _jsonify({
         "status": "running",
+        "title": "FREE FIRE OB55",
         "version": "OB55",
         "endpoint": "/info?uid=UID",
         "example": "/info?uid=2084018498",
-        "priority": "BD → IND → BR",
-        "credit": "@Itz_Jahid_X"
+        "priority": "BD → IND → BR → ID → ME → PK → SG",
+        "credit": "@developer_40"
     })
 
 
@@ -720,7 +721,11 @@ def token_status():
     for region, info in _token_cache.items():
         expires_in = info['expires_at'] - time.time()
         status[region] = {"has_token": True, "expires_in": f"{expires_in/3600:.1f} hours"}
-    return _jsonify({"total_tokens": len(_token_cache), "tokens": status})
+    return _jsonify({
+        "title": "FREE FIRE OB55",
+        "total_tokens": len(_token_cache),
+        "tokens": status
+    })
 
 
 # ===========================================================
